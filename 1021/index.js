@@ -10,7 +10,7 @@ console.log('NOTAS:');
 
 notas.map((item) => {
     aux = parseInt(Number(value) / item);
-    console.log(`${aux} nota(s) de R$ ${item}.00`);
+    console.log(`${aux} nota(s) de R$ ${item.toFixed(2)}`);
     value %= item;
 });
 
@@ -18,6 +18,6 @@ console.log('MOEDAS:')
 
 moedas.map((item) =>{
     aux = parseInt(Number(value) / item);
-    console.log(`${aux} moeda(s) de R$ ${item === 1 ? '1.00' : item.toFixed(2)}`);
-    value %= item;
+    console.log(`${aux} moeda(s) de R$ ${item.toFixed(2)}`);
+    value = parseFloat(value % item).toFixed(2);
 })
