@@ -33,6 +33,11 @@ let compareMinutes = (firstMinute, lastMinute, hoursRemaining, daysRemaining) =>
 
 let compareHours = (firstHour, lastHour, days) => {
     if (firstHour === lastHour) hoursRemaining = 0
+    else{
+        if(firstHour <){
+            
+        }
+    }
     compareMinutes(firstMinute, lastMinute, hoursRemaining, days)
 }
 
